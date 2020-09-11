@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#11998E"
+        tools:context=".MainActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginEnd="60dp"
+            android:background="@drawable/rounded_fragment"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="50dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_white"
+                    android:gravity="center"
+
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/mall3"
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/icons8_electrical" />
+
+                    <TextView
+                        android:id="@+id/network3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_light"
+                        android:gravity="center"
+                        android:text="Bayar                                           Listrik"
+                        android:textColor="#172646"
+                        android:textSize="11sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_white"
+                    android:gravity="center"
+
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/mall4"
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/icons8_water_2"
+
+                        android:layout_marginBottom="8dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/network4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_light"
+                        android:gravity="center"
+                        android:text="Bayar                                           Air"
+                        android:textColor="#172646"
+                        android:textSize="11sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="50dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_white"
+                    android:gravity="center"
+
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/mall"
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/icons8_money"
+                        android:layout_marginBottom="8dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/network"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_light"
+                        android:gravity="center"
+                        android:text="Bayar                                           Cicilan"
+                        android:textColor="#172646"
+                        android:textSize="11sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_white"
+                    android:gravity="center"
+
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/mall2"
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/icons8_trash"
+                        android:layout_marginBottom="8dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/network2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_light"
+                        android:gravity="center"
+                        android:text="Ambil                                           Sampah"
+                        android:textColor="#172646"
+                        android:textSize="11sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_white"
+                    android:gravity="center"
+
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/mall5"
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/icons8_complaint"
+                        android:layout_marginBottom="8dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/network5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_light"
+                        android:gravity="center"
+                        android:text="Form                                           Complain"
+                        android:textColor="#172646"
+                        android:textSize="11sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_white"
+                    android:gravity="center"
+
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/mall6"
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/icons8_mosque"
+                        android:layout_marginBottom="8dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/network6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_light"
+                        android:gravity="center"
+                        android:text="Setor                                           Hafalan"
+                        android:textColor="#172646"
+                        android:textSize="11sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_light"
+                android:shadowColor="#FFFFFF"
+                android:text="Ada yang bisa dibantu ?"
+                android:textColor="#11998E"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.189"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="160dp"
+            android:layout_height="123dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.987"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/relaxing_at_home_rafiki" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="152dp"
+            android:layout_height="27dp"
+            android:fontFamily="@font/poppins_regular"
+
+            android:text="Welcome Back,"
+
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+            app:layout_constraintEnd_toStartOf="@+id/imageView3"
+            app:layout_constraintHorizontal_bias="0.329"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.347" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="152dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="8dp"
+
+
+            android:fontFamily="@font/poppins_bold"
+
+
+            android:text="Username"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+            app:layout_constraintEnd_toStartOf="@+id/imageView3"
+            app:layout_constraintHorizontal_bias="0.329"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="440dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            app:srcCompat="@drawable/ic_repeat_grid_4" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
