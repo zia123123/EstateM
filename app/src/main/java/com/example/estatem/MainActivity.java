@@ -25,11 +25,9 @@ public class MainActivity extends AppCompatActivity {
         if (savedInstanceState==null){
             buttonNav.setItemSelected(R.id.beranda, true);
             fragmentManager = getSupportFragmentManager();
-            BerandaFragment berandaFragment = new BerandaFragment();
-            fragmentManager.beginTransaction().replace(R.id.fragment_container, berandaFragment)
-                    .commit();
-            //SetorHafalanFragment setorHafalanFragment = new SetorHafalanFragment();
-            //fragmentManager.beginTransaction().replace(R.id.fragment_container, setorHafalanFragment).commit();
+            Dashboard berandaFragment = new Dashboard();
+            fragmentManager.beginTransaction().replace(R.id.fragment_container, berandaFragment).commit();
+
         }
 
         buttonNav.setOnItemSelectedListener(new ChipNavigationBar.OnItemSelectedListener() {
@@ -38,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 Fragment fragment = null;
                 switch (id){
                     case R.id.beranda:
-                        fragment = new BerandaFragment();
+                        fragment = new Dashboard();
                         break;
                     case R.id.akun:
                         fragment = new AkunFragment();
